@@ -1,7 +1,7 @@
 'use client';
 
 import { Badge } from '@/components/ui/badge';
-import { useActiveRoute } from '@/hooks/useActiveRoute';
+import { useActiveRoute } from '@/hooks';
 import { Home, LineChartIcon, Package2, PackageIcon, ShoppingCart, Users } from 'lucide-react';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';

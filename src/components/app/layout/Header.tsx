@@ -30,7 +30,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { useActiveRoute } from '@/hooks/useActiveRoute';
+import { useActiveRoute } from '@/hooks';
 import { twMerge } from 'tailwind-merge';
 
 const MENU = [

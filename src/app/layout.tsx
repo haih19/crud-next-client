@@ -21,12 +21,12 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
-      <body>
+      <body className={inter.className}>
         <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
           <SideBar />
-          <div className="flex flex-col">
+          <div className="flex h-dvh flex-col">
             <Header />
-            <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">{children}</main>
+            {children}
           </div>
         </div>
       </body>
