@@ -6,6 +6,7 @@ export type User = {
     id?: number;
     name?: string;
     email?: string;
+    age?: number;
     created_at?: string;
     updated_at?: string;
 };

@@ -15,7 +15,7 @@ export class UserService {
      * @returns any List of users
      * @throws ApiError
      */
-    public static c457726701591D1183B53Aa71Fc13441(
+    public static getUsers(
         search?: string,
         pageSize?: number,
         pageNumb?: number,
@@ -29,8 +29,8 @@ export class UserService {
             url: '/api/users',
             query: {
                 'search': search,
-                'page_size': pageSize,
-                'page_numb': pageNumb,
+                'pageSize': pageSize,
+                'pageNumb': pageNumb,
             },
         });
     }
@@ -40,7 +40,7 @@ export class UserService {
      * @returns User User created successfully
      * @throws ApiError
      */
-    public static a0265360B2014512D6Dbfaf0E7(
+    public static createUser(
         requestBody: User,
     ): CancelablePromise<User> {
         return __request(OpenAPI, {
@@ -56,7 +56,7 @@ export class UserService {
      * @returns User User retrieved successfully
      * @throws ApiError
      */
-    public static a33Ff774D5Cba33C039Dec2C3E0287(
+    public static getUserById(
         id: number,
     ): CancelablePromise<User> {
         return __request(OpenAPI, {
@@ -77,7 +77,7 @@ export class UserService {
      * @returns User User updated successfully
      * @throws ApiError
      */
-    public static b9091397C8B25F12C6Adb74Be6Ce3A5A(
+    public static updateUser(
         id: number,
         requestBody: User,
     ): CancelablePromise<User> {
@@ -100,7 +100,7 @@ export class UserService {
      * @returns any User deleted successfully
      * @throws ApiError
      */
-    public static fa56Cffde745D3F152F95Cbacd936C0B(
+    public static deleteUser(
         id: number,
     ): CancelablePromise<{
         success?: boolean;
